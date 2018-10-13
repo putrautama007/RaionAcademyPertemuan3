@@ -3,12 +3,12 @@
 
     <item
         android:id="@+id/navigation_prev_match"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/trophy"
         android:title="@string/previous_match" />
 
     <item
         android:id="@+id/navigation_next_match"
-        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:icon="@drawable/calendar"
         android:title="@string/next_match" />
 
 

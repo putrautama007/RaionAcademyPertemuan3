@@ -26,6 +26,13 @@ public class DetailMatchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_match);
 
+        setUpView();
+        String json = getIntent().getStringExtra(ITEM_MATCH);
+        eventList = gson.fromJson(json, EventList.class);
+        loadData();
+    }
+
+    private void setUpView(){
         mMatchDate = findViewById(R.id.tv_match_date_detail);
         mHomeTeam = findViewById(R.id.tv_home_team_detail);
         mAwayTeam = findViewById(R.id.tv_away_team_detail);
@@ -44,11 +51,6 @@ public class DetailMatchActivity extends AppCompatActivity {
         mAwayLineupForward = findViewById(R.id.tv_forward_away_detail);
         mHomeLineupSubstitutes = findViewById(R.id.tv_substitute_home_detail);
         mAwayLineupSubstitutes = findViewById(R.id.tv_substitute_away_detail);
-
-
-        String json = getIntent().getStringExtra(ITEM_MATCH);
-        eventList = gson.fromJson(json, EventList.class);
-        loadData();
     }
 
     private void loadData() {

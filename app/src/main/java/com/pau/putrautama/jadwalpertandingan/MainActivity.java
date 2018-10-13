@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity
     }
 
     private boolean loadFragment(Fragment fragment) {
-        //switching fragment
         if (fragment != null) {
             getSupportFragmentManager()
                     .beginTransaction()

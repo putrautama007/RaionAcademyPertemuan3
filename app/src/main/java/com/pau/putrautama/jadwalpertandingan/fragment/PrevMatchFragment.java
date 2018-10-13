@@ -24,19 +24,12 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
 public class PrevMatchFragment extends Fragment {
 
     private RecyclerView mRecyclerView;
     private MatchAdapter mMatchAdapter;
     private Service mService;
-
-
-    public PrevMatchFragment() {
-        // Required empty public constructor
-    }
 
 
     @Override
