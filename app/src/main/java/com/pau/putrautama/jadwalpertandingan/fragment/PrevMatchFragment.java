@@ -46,10 +46,10 @@ public class PrevMatchFragment extends Fragment {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(),
                 LinearLayoutManager.VERTICAL,false));
 
-        loadMoiveData();
+        loadData();
     }
 
-    private void loadMoiveData() {
+    private void loadData() {
         mService = Client.getClient().create(Service.class);
         Call<EventResponse> call = mService.getPrevMatch();
         call.enqueue(new Callback<EventResponse>() {
