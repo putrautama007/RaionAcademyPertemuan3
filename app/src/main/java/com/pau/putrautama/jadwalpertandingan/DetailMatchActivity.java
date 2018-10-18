@@ -25,6 +25,7 @@ public class DetailMatchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_match);
+        setTitle(R.string.detail_match);
 
         setUpView();
         String json = getIntent().getStringExtra(ITEM_MATCH);
